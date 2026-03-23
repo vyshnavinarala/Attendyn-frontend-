@@ -82,7 +82,8 @@
                         android:id="@+id/iv_profile_edit"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:scaleType="centerInside"
+                        android:padding="28dp"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/ic_user"
                         app:tint="#5E5CE6" />
                 </com.google.android.material.card.MaterialCardView>

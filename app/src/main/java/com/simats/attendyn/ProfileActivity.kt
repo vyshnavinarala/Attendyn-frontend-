@@ -60,19 +60,20 @@ class ProfileActivity : AppCompatActivity() {
             if (photoPath.startsWith("uploads/")) {
                 // Load from server
                 val fullUrl = RetrofitClient.BASE_URL + photoPath
-                ivAvatarProfile.setPadding(0, 0, 0, 0)
-                ivAvatarProfile.scaleType = ImageView.ScaleType.CENTER_CROP
-                ivAvatarProfile.imageTintList = null
                 
                 thread {
                     try {
                         val inputStream = URL(fullUrl).openStream()
                         val bitmap = BitmapFactory.decodeStream(inputStream)
                         runOnUiThread {
+                            ivAvatarProfile.setPadding(0, 0, 0, 0)
+                            ivAvatarProfile.scaleType = ImageView.ScaleType.CENTER_CROP
                             ivAvatarProfile.setImageBitmap(bitmap)
+                            ivAvatarProfile.imageTintList = null
                         }
                     } catch (e: Exception) {
                         e.printStackTrace()
+                        runOnUiThread { setDefaultProfileIcon() }
                     }
                 }
             } else {
@@ -83,20 +84,43 @@ class ProfileActivity : AppCompatActivity() {
                     ivAvatarProfile.scaleType = ImageView.ScaleType.CENTER_CROP
                     ivAvatarProfile.setImageURI(android.net.Uri.fromFile(file))
                     ivAvatarProfile.imageTintList = null // Clear tint for actual photo
+                } else {
+                    checkFallbackAndSetDefault(prefs)
                 }
             }
         } else {
-            // Fallback: check if the default local file exists
-            val fallbackFile = java.io.File(filesDir, "profile_image.jpg")
-            if (fallbackFile.exists()) {
-                ivAvatarProfile.setPadding(0, 0, 0, 0)
-                ivAvatarProfile.scaleType = ImageView.ScaleType.CENTER_CROP
-                ivAvatarProfile.setImageURI(android.net.Uri.fromFile(fallbackFile))
-                ivAvatarProfile.imageTintList = null
-                // Restore the path in prefs for next time
-                prefs.edit().putString("USER_PHOTO_PATH", fallbackFile.absolutePath).apply()
-            }
+            checkFallbackAndSetDefault(prefs)
         }
+    }
+
+    private fun checkFallbackAndSetDefault(prefs: android.content.SharedPreferences) {
+        val userId = prefs.getInt("USER_ID", -1)
+        val fileName = if (userId != -1) "profile_image_$userId.jpg" else "profile_image.jpg"
+        val fallbackFile = java.io.File(filesDir, fileName)
+        
+        if (fallbackFile.exists()) {
+            ivAvatarProfile.setPadding(0, 0, 0, 0)
+            ivAvatarProfile.scaleType = ImageView.ScaleType.CENTER_CROP
+            ivAvatarProfile.setImageURI(android.net.Uri.fromFile(fallbackFile))
+            ivAvatarProfile.imageTintList = null
+            // Restore the path in prefs for next time
+            prefs.edit().putString("USER_PHOTO_PATH", fallbackFile.absolutePath).apply()
+        } else {
+            setDefaultProfileIcon()
+        }
+    }
+
+    private fun setDefaultProfileIcon() {
+        val p = dpToPx(16)
+        ivAvatarProfile.setPadding(p, p, p, p)
+        ivAvatarProfile.scaleType = ImageView.ScaleType.CENTER_INSIDE
+        ivAvatarProfile.setImageResource(R.drawable.ic_user)
+        ivAvatarProfile.imageTintList = android.content.res.ColorStateList.valueOf(android.graphics.Color.parseColor("#545470"))
+    }
+
+    private fun dpToPx(dp: Int): Int {
+        val density = resources.displayMetrics.density
+        return (dp * density).toInt()
     }
 
     private fun setupBackNavigation() {

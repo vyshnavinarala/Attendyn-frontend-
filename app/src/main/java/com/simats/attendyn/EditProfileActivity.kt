@@ -70,8 +70,38 @@ class EditProfileActivity : AppCompatActivity() {
                 binding.ivProfileEdit.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
                 binding.ivProfileEdit.setImageURI(Uri.fromFile(file))
                 binding.ivProfileEdit.imageTintList = null
+            } else {
+                checkFallbackAndSetDefault(prefs)
             }
+        } else {
+            checkFallbackAndSetDefault(prefs)
         }
+    }
+
+    private fun checkFallbackAndSetDefault(prefs: android.content.SharedPreferences) {
+        val fallbackFile = java.io.File(filesDir, "profile_image.jpg")
+        if (fallbackFile.exists()) {
+            binding.ivProfileEdit.setPadding(0, 0, 0, 0)
+            binding.ivProfileEdit.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
+            binding.ivProfileEdit.setImageURI(Uri.fromFile(fallbackFile))
+            binding.ivProfileEdit.imageTintList = null
+            // Restore the path in prefs for next time
+            prefs.edit().putString("USER_PHOTO_PATH", fallbackFile.absolutePath).apply()
+        } else {
+            setDefaultProfileIcon()
+        }
+    }
+
+    private fun setDefaultProfileIcon() {
+        binding.ivProfileEdit.setPadding(dpToPx(28), dpToPx(28), dpToPx(28), dpToPx(28))
+        binding.ivProfileEdit.scaleType = android.widget.ImageView.ScaleType.FIT_CENTER
+        binding.ivProfileEdit.setImageResource(R.drawable.ic_user)
+        binding.ivProfileEdit.imageTintList = android.content.res.ColorStateList.valueOf(android.graphics.Color.parseColor("#5E5CE6"))
+    }
+
+    private fun dpToPx(dp: Int): Int {
+        val density = resources.displayMetrics.density
+        return (dp * density).toInt()
     }
 
     private fun setupListeners() {
@@ -133,9 +163,10 @@ class EditProfileActivity : AppCompatActivity() {
                     if (response.isSuccessful) {
                         prefs.edit().putString("USER_NAME", newName).apply()
 
-                        // Check if photo was changed
+                        // Check if photo changed
                         if (selectedImageBitmap != null || selectedImageUri != null) {
-                            val photoPath = saveProfileImage()
+                            val userId = prefs.getInt("USER_ID", -1)
+                            val photoPath = saveProfileImage(userId)
                             if (photoPath != null) {
                                 uploadProfilePhoto(token, photoPath)
                             } else {
@@ -193,8 +224,9 @@ class EditProfileActivity : AppCompatActivity() {
         finish()
     }
 
-    private fun saveProfileImage(): String? {
-        val file = java.io.File(filesDir, "profile_image.jpg")
+    private fun saveProfileImage(userId: Int): String? {
+        val fileName = if (userId != -1) "profile_image_$userId.jpg" else "profile_image.jpg"
+        val file = java.io.File(filesDir, fileName)
         try {
             if (selectedImageBitmap != null) {
                 val out = java.io.FileOutputStream(file)

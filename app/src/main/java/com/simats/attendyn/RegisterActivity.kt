@@ -60,8 +60,15 @@ class RegisterActivity : AppCompatActivity() {
 
             if (name.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                binding.emailEditText.error = "Invalid email format"
+                binding.emailEditText.requestFocus()
+            } else if (password.length < 6) {
+                binding.passwordEditText.error = "Password must be at least 6 characters"
+                binding.passwordEditText.requestFocus()
             } else if (password != confirmPassword) {
                 binding.confirmPasswordEditText.error = "Passwords do not match"
+                binding.confirmPasswordEditText.requestFocus()
             } else {
                 // Show progress
                 binding.registerButton.isEnabled = false

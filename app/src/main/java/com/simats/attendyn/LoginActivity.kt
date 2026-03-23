@@ -52,6 +52,10 @@ class LoginActivity : AppCompatActivity() {
                 emailEditText.error = "Email is required"
                 emailEditText.requestFocus()
                 return@setOnClickListener
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                emailEditText.error = "Invalid email format"
+                emailEditText.requestFocus()
+                return@setOnClickListener
             }
 
             if (password.isEmpty()) {
