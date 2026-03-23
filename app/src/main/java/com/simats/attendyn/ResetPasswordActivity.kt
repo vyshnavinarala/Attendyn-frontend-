@@ -57,6 +57,18 @@ class ResetPasswordActivity : AppCompatActivity() {
             if (newPassword.isEmpty() || confirmPassword.isEmpty()) {
                 if (newPassword.isEmpty()) newPasswordEditText.error = "Enter new password"
                 if (confirmPassword.isEmpty()) confirmPasswordEditText.error = "Confirm your password"
+            } else if (newPassword.length < 6) {
+                newPasswordEditText.error = "Password must be at least 6 characters"
+                newPasswordEditText.requestFocus()
+            } else if (!newPassword.any { it.isUpperCase() }) {
+                newPasswordEditText.error = "Must contain at least one uppercase letter"
+                newPasswordEditText.requestFocus()
+            } else if (!newPassword.any { it.isDigit() }) {
+                newPasswordEditText.error = "Must contain at least one number"
+                newPasswordEditText.requestFocus()
+            } else if (!newPassword.any { it.isLetterOrDigit().not() }) {
+                newPasswordEditText.error = "Must contain at least one special character"
+                newPasswordEditText.requestFocus()
             } else if (newPassword != confirmPassword) {
                 confirmPasswordEditText.error = "Passwords do not match"
             } else {

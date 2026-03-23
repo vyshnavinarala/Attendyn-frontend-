@@ -66,6 +66,15 @@ class RegisterActivity : AppCompatActivity() {
             } else if (password.length < 6) {
                 binding.passwordEditText.error = "Password must be at least 6 characters"
                 binding.passwordEditText.requestFocus()
+            } else if (!password.any { it.isUpperCase() }) {
+                binding.passwordEditText.error = "Must contain at least one uppercase letter"
+                binding.passwordEditText.requestFocus()
+            } else if (!password.any { it.isDigit() }) {
+                binding.passwordEditText.error = "Must contain at least one number"
+                binding.passwordEditText.requestFocus()
+            } else if (!password.any { it.isLetterOrDigit().not() }) {
+                binding.passwordEditText.error = "Must contain at least one special character"
+                binding.passwordEditText.requestFocus()
             } else if (password != confirmPassword) {
                 binding.confirmPasswordEditText.error = "Passwords do not match"
                 binding.confirmPasswordEditText.requestFocus()

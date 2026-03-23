@@ -112,6 +112,21 @@ class ChangePasswordActivity : AppCompatActivity() {
             return
         }
 
+        if (!new.any { it.isUpperCase() }) {
+            Toast.makeText(this, "Must contain at least one uppercase letter", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        if (!new.any { it.isDigit() }) {
+            Toast.makeText(this, "Must contain at least one number", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        if (!new.any { it.isLetterOrDigit().not() }) {
+            Toast.makeText(this, "Must contain at least one special character", Toast.LENGTH_SHORT).show()
+            return
+        }
+
         val prefs = getSharedPreferences("AttendynPrefs", MODE_PRIVATE)
         val token = prefs.getString("AUTH_TOKEN", null)
 
