@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    
+    <!-- Calendar Body -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M19,4h-1V2h-2v2H8V2H6v2H5c-1.11,0 -1.99,0.9 -1.99,2L3,20a2,2 0,0,0 2,2h14c1.1,0 2,-0.9 2,-2V6c0,-1.1 -0.9,-2 -2,-2zM19,20H5V10h14v10zM19,8H5V6h14v2z" />
+        
+    <!-- Checkmark (Approximation) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M9,16.17L4.83,12l-1.42,1.41L9,19 21,7l-1.41,-1.41z" />
+        
+    <!-- Bars (Approximation for graph) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M7,14h2v4H7z M11,12h2v6h-2z M15,10h2v8h-2z" />
+
+</vector>

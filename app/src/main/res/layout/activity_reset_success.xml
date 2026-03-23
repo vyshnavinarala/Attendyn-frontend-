@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_register_gradient"
+    android:padding="24dp"
+    tools:context=".ResetSuccessActivity">
+
+    <View
+        android:id="@+id/success_icon_bg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/bg_success_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/success_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_success_checkmark"
+        app:layout_constraintBottom_toBottomOf="@+id/success_icon_bg"
+        app:layout_constraintEnd_toEndOf="@+id/success_icon_bg"
+        app:layout_constraintStart_toStartOf="@+id/success_icon_bg"
+        app:layout_constraintTop_toTopOf="@+id/success_icon_bg" />
+
+    <TextView
+        android:id="@+id/reset_success_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Password Reset Successful!"
+        android:textColor="#0D0D26"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/success_icon_bg" />
+
+    <TextView
+        android:id="@+id/reset_success_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="You can now login with your new password."
+        android:textColor="#545470"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_success_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_to_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_intro_next_bg"
+        android:text="Back to Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/reset_success_subtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

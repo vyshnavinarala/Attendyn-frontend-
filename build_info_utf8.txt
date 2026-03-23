@@ -1,0 +1,348 @@
+﻿Initialized native services in: C:\Users\vyshn\.gradle\native
+Initialized jansi services in: C:\Users\vyshn\.gradle\native
+The client will now receive all logging from the daemon (pid: 5660). The daemon log file: C:\Users\vyshn\.gradle\daemon\8.13\daemon-5660.out.log
+Starting 5th build in daemon [uptime: 6 mins 3.887 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 12 worker leases.
+Now considering [C:\Users\vyshn\AndroidStudioProjects\Attendyn] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\build.gradle.kts'.
+Included projects: [root project 'Attendyn', project ':app']
+
+> Configure project :
+Evaluating root project 'Attendyn' using build file 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '8.11.2', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '8.11.2']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.0.21']
+Resolved plugin [id: 'kotlin-parcelize']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle85 variant
+All projects evaluated.
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugKotlin
+Task name matched 'compileDebugKotlin'
+Selected primary task 'compileDebugKotlin' from project :
+Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:preBuild', task ':app:preDebugBuild', task ':app:dataBindingMergeDependencyArtifactsDebug', task ':app:generateDebugResValues', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:dataBindingGenBaseClassesDebug', task ':app:dataBindingTriggerDebug', task ':app:checkDebugAarMetadata', task ':app:mapDebugSourceSetPaths', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#516,Execution worker,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#517,Execution worker Thread 2,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:preBuild (Thread[#515,included builds,5,main]) started.
+:app:preBuild (Thread[#515,included builds,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#515,included builds,5,main]) started.
+:app:preDebugBuild (Thread[#515,included builds,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:dataBindingMergeDependencyArtifactsDebug (Thread[#515,included builds,5,main]) started.
+:app:dataBindingMergeDependencyArtifactsDebug (Thread[#515,included builds,5,main]) started.
+
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+Caching disabled for task ':app:dataBindingMergeDependencyArtifactsDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:dataBindingMergeDependencyArtifactsDebug' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[#515,included builds,5,main]) started.
+:app:generateDebugResValues (Thread[#515,included builds,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[#515,included builds,5,main]) started.
+:app:generateDebugResources (Thread[#515,included builds,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[#515,included builds,5,main]) started.
+:app:mergeDebugResources (Thread[#515,included builds,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[#515,included builds,5,main]) started.
+:app:packageDebugResources (Thread[#515,included builds,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#515,included builds,5,main]) started.
+:app:parseDebugLocalResources (Thread[#515,included builds,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:dataBindingGenBaseClassesDebug (Thread[#515,included builds,5,main]) started.
+:app:dataBindingGenBaseClassesDebug (Thread[#515,included builds,5,main]) started.
+
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+Caching disabled for task ':app:dataBindingGenBaseClassesDebug' because:
+  Build cache is disabled
+Skipping task ':app:dataBindingGenBaseClassesDebug' as it is up-to-date.
+Resolve mutations for :app:dataBindingTriggerDebug (Thread[#515,included builds,5,main]) started.
+:app:dataBindingTriggerDebug (Thread[#515,included builds,5,main]) started.
+
+> Task :app:dataBindingTriggerDebug UP-TO-DATE
+Caching disabled for task ':app:dataBindingTriggerDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:dataBindingTriggerDebug' as it is up-to-date.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#515,included builds,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#515,included builds,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#515,included builds,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#515,included builds,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#515,included builds,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#515,included builds,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#515,included builds,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#524,Execution worker Thread 9,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :app:processDebugMainManifest (Thread[#524,Execution worker Thread 9,5,main]) started.
+:app:processDebugMainManifest (Thread[#524,Execution worker Thread 9,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[#524,Execution worker Thread 9,5,main]) started.
+:app:processDebugManifest (Thread[#524,Execution worker Thread 9,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[#524,Execution worker Thread 9,5,main]) started.
+:app:processDebugManifestForPackage (Thread[#524,Execution worker Thread 9,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[#524,Execution worker Thread 9,5,main]) started.
+:app:processDebugResources (Thread[#524,Execution worker Thread 9,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[#524,Execution worker Thread 9,5,main]) started.
+:app:compileDebugKotlin (Thread[#524,Execution worker Thread 9,5,main]) started.
+
+> Task :app:compileDebugKotlin
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+GradleBuildProject.Builder should not be accessed through AnalyticsConfiguratorService after AnalyticsService is created. Analytics information of this build might be incomplete.
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\kotlin', not found
+file or directory 'C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\debug\java', not found
+Kotlin source files: C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\AboutAppActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\AccountSuccessActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\AddAttendanceActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\AddSubjectsActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\AnalysisActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\CalendarActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ChangePasswordActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\DashboardSubjectAdapter.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\EditGoalActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\EditProfileActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ForgotPasswordActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\IntroActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\IntroActivity2.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\IntroActivity3.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\LoginActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\MainActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ManageSubjectAdapter.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ManageSubjectsActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\CommonResponse.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\ForgotPasswordRequest.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\GoalRequest.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\GoalResponse.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\LoginRequest.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\RegisterRequest.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\RegisterResponse.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\ResetPasswordRequest.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\Subject.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\User.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\model\VerifyOtpRequest.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\network\ApiService.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\network\RetrofitClient.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\NotificationsActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\OtpVerificationActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\PrivacyPolicyActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ProfileActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\RegisterActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ResetPasswordActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\ResetSuccessActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\SetGoalActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\SplashActivity.kt, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\src\main\java\com\simats\attendyn\SubjectAdapter.kt
+Java source files: C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityAboutAppBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityAccountSuccessBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityAddAttendanceBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityAddSubjectsBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityAnalysisBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityCalendarBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityChangePasswordBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityEditGoalBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityEditProfileBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityForgotPasswordBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityIntro2Binding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityIntro3Binding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityIntroBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityLoginBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityMainBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityManageSubjectsBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityNotificationsBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityOtpVerificationBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityPrivacyPolicyBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityProfileBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityRegisterBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityResetPasswordBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivityResetSuccessBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivitySetGoalBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ActivitySplashBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\DialogDeleteAccountBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\DialogLogoutBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ItemCalendarDayBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ItemDashboardSubjectBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ItemManageSubjectBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_base_class_source_out\debug\out\com\simats\attendyn\databinding\ItemSubjectBinding.java, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\generated\data_binding_trigger\debug\com\simats\attendyn\DataBindingTriggerClass.java
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\kotlin\compileDebugKotlin\cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\kotlin\compileDebugKotlin\local-state\build-history.bin, useModuleDetection=true), usePreciseJavaTracking=true, icFeatures=IncrementalCompilationFeatures(withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false), outputFiles=[C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\tmp\kotlin-classes\debug, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\kotlin\compileDebugKotlin\cacheable, C:\Users\vyshn\AndroidStudioProjects\Attendyn\app\build\kotlin\compileDebugKotlin\local-state])
+.\gradlew.bat : e: file
+:///C:/Users/vyshn/Andr
+oidStudioProjects/Atten
+dyn/app/src/main/java/c
+om/simats/attendyn/Forg
+otPasswordActivity.kt:4
+1:41 Unresolved 
+reference 
+'forgotPassword'.
+At line:1 char:1
++ .\gradlew.bat 
+compileDebugKotlin 
+--info > 
+build_info.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : 
+NotSpecified: (e:     
+file:///C:/U...orgotPa 
+   ssword'.:String) 
+[], R    emoteException
+    + 
+FullyQualifiedErrorI   
+ d : NativeCommandError
+ 
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/LoginActivity.kt:69:
+37 Unresolved 
+reference 'loginUser'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/LoginActivity.kt:86:
+70 Unresolved 
+reference 
+'attendanceGoal'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/OtpVerificationActiv
+ity.kt:60:41 
+Unresolved reference 
+'verifyOtp'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/OtpVerificationActiv
+ity.kt:96:37 
+Unresolved reference 
+'forgotPassword'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/RegisterActivity.kt:
+72:41 Unresolved 
+reference 
+'registerUser'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/ResetPasswordActivit
+y.kt:68:41 Unresolved 
+reference 
+'resetPassword'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/SetGoalActivity.kt:5
+1:37 Unresolved 
+reference 'updateGoal'.
+e: file:///C:/Users/vys
+hn/AndroidStudioProject
+s/Attendyn/app/src/main
+/java/com/simats/attend
+yn/network/RetrofitClie
+nt.kt:20:19 Unresolved 
+reference 'ApiService'.
+Finished executing kotlin compiler using DAEMON strategy
+
+> Task :app:compileDebugKotlin FAILED
+
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+Execution failed for 
+task ':app:compileDebug
+Kotlin'.
+> A failure occurred 
+while executing org.jet
+brains.kotlin.compilerR
+unner.GradleCompilerRun
+nerWithWorkers$GradleKo
+tlinCompilerWorkAction
+   > Compilation 
+error. See log for 
+more details
+
+* Try:
+> Run with 
+--stacktrace option to 
+get the stack trace.
+> Run with --debug 
+option to get more log 
+output.
+> Run with --scan to 
+get full insights.
+> Get more help at http
+s://help.gradle.org.
+
+BUILD FAILED in 15s
+17 actionable tasks: 1 executed, 16 up-to-date
+Watched directory hierarchies: [C:\Users\vyshn\AndroidStudioProjects\Attendyn]

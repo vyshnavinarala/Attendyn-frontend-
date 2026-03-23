@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="120dp"
+    android:viewportWidth="400"
+    android:viewportHeight="120">
+    <!-- Multiple soft wave paths for a glowing effect -->
+    <path
+        android:pathData="M-50,60 C50,20 150,100 250,60 C350,20 450,100 550,60"
+        android:strokeWidth="12"
+        android:strokeColor="#1AFFFFFF"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M-50,60 C50,20 150,100 250,60 C350,20 450,100 550,60"
+        android:strokeWidth="4"
+        android:strokeColor="#33FFFFFF"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M-50,70 C60,30 140,110 240,70 C340,30 440,110 540,70"
+        android:strokeWidth="8"
+        android:strokeColor="#1AFFFFFF"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M-50,70 C60,30 140,110 240,70 C340,30 440,110 540,70"
+        android:strokeWidth="2"
+        android:strokeColor="#4DFFFFFF"
+        android:strokeLineCap="round"/>
+</vector>

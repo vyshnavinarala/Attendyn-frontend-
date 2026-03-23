@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Main Calendar Body (Rounded Square) - OUTLINE -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:pathData="M20,25 h60 a5,5 0 0 1 5,5 v50 a5,5 0 0 1 -5,5 h-60 a5,5 0 0 1 -5,-5 v-50 a5,5 0 0 1 5,-5 z" />
+
+    <!-- Top Header Line (Filled Block) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M20,25 h60 v12 h-60 z" />
+
+    <!-- Rings/Hooks at the top (Rounded caps) -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M35,18 v12 M65,18 v12" />
+    
+    <!-- The Checkmark (Center) - Thicker & Sharper -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="7"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M35,52 l8,8 l22,-22" />
+
+    <!-- Bar Chart (Bottom) - Filled -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M32,75 h8 v-12 h-8 z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M46,75 h8 v-20 h-8 z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M60,75 h8 v-28 h-8 z" />
+
+</vector>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Glow (Soft) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="70%p"
+                android:startColor="#302979FF"
+                android:endColor="#00000000" />
+            <size android:width="260dp" android:height="260dp"/>
+        </shape>
+    </item>
+    
+    <!-- The Neon Ring itself -->
+    <item android:top="20dp" android:bottom="20dp" android:left="20dp" android:right="20dp">
+        <shape android:shape="oval">
+            <stroke
+                android:width="4dp"
+                android:color="#2979FF" /> <!-- Electric Blue Stroke -->
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    
+    <!-- Inner Blue Glow -->
+    <item android:top="25dp" android:bottom="25dp" android:left="25dp" android:right="25dp">
+         <shape android:shape="oval">
+            <stroke
+                android:width="2dp"
+                android:color="#00E5FF" /> <!-- Cyan inner hint -->
+            <gradient
+                android:type="radial"
+                android:gradientRadius="50%p"
+                android:startColor="#40311B92"
+                android:centerColor="#20000000"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

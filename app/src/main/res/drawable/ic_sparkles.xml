@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+    <!-- Random stars/dots -->
+    <path android:fillColor="#FFFFFF" android:pathData="M150,50 L152,55 L157,57 L152,59 L150,64 L148,59 L143,57 L148,55 Z" />
+    <path android:fillColor="#B666FF" android:pathData="M80,120 L81,123 L84,124 L81,125 L80,128 L79,125 L76,124 L79,123 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M220,90 L221,92 L224,93 L221,94 L220,96 L219,94 L216,93 L219,92 Z" />
+    <path android:fillColor="#B666FF" android:pathData="M50,200 L51,202 L54,203 L51,204 L50,206 L49,204 L46,203 L49,202 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M250,210 L251,212 L254,213 L251,214 L250,216 L249,214 L246,213 L249,212 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M160,250 L161,252 L164,253 L161,254 L160,256 L159,254 L156,253 L159,252 Z" />
+    <!-- Smaller dots -->
+    <path android:fillColor="#80FFFFFF" android:pathData="M100,60 h2 v2 h-2 z" />
+    <path android:fillColor="#80FFFFFF" android:pathData="M200,160 h1.5 v1.5 h-1.5 z" />
+    <path android:fillColor="#80FFFFFF" android:pathData="M120,220 h2 v2 h-2 z" />
+    <path android:fillColor="#80FFFFFF" android:pathData="M240,40 h1.5 v1.5 h-1.5 z" />
+</vector>

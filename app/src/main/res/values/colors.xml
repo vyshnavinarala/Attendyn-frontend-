@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    
+    <!-- Splash Screen Colors -->
+    <!-- Deep Purple Top -->
+    <color name="splash_bg_start">#120822</color>
+    <!-- Vibrant Purple Center/Transition -->
+    <color name="splash_bg_center">#591DA9</color>
+    <!-- Blue/Purple Bottom -->
+    <color name="splash_bg_end">#2A1885</color>
+    
+    <!-- Splash Radial Colors -->
+    <color name="splash_vibrant_purple">#6029F5</color>
+    <color name="splash_deep_purple">#6029F5</color>
+    <color name="splash_midnight">#0F0338</color>
+    
+    <!-- Accents -->
+    <color name="neon_cyan">#00E5FF</color>
+    <color name="neon_pink">#D500F9</color>
+    
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0BEC5</color>
+
+    <!-- Intro Screen Colors -->
+    <color name="intro_bg">#F8F8FF</color>
+    <color name="intro_title">#0D0D26</color>
+    <color name="intro_desc">#545470</color>
+    <color name="intro_indicator_active">#5E5CE6</color>
+    <color name="intro_indicator_inactive">#D1D1D1</color>
+    <color name="intro_skip_text">#545470</color>
+
+    <!-- Forgot Password Colors -->
+    <color name="forgot_password_bg_start">#F8F8FF</color>
+    <color name="forgot_password_bg_end">#E8E8FF</color>
+    <color name="btn_purple">#5E5CE6</color>
+    <color name="input_label_color">#545470</color>
+    <color name="input_border_color">#E5E5E5</color>
+    <color name="border_blue_focus">#5E5CE6</color>
+
+    <!-- Add Subject Colors -->
+    <color name="attendance_green">#22C55E</color>
+    <color name="attendance_orange">#F59E0B</color>
+    <color name="attendance_red">#EF4444</color>
+    <color name="attendance_mixed">#FFE082</color>
+    <color name="calc_card_bg">#F4F4FF</color>
+    <color name="calc_card_border">#E0E0FF</color>
+    <color name="dashboard_green">#00A355</color>
+    
+    <!-- Analysis Screen Colors -->
+    <color name="analysis_prediction_green_bg">#F0FDF4</color>
+    <color name="analysis_prediction_green_border">#DCFCE7</color>
+    <color name="analysis_prediction_red_bg">#FEF2F2</color>
+    <color name="analysis_prediction_red_border">#FEE2E2</color>
+    <color name="analysis_safe_leave_bg">#F0FDF4</color>
+    <!-- Logout Dialog Design Tokens -->
+    <color name="logout_icon_bg">#FFEAEA</color>
+    <color name="logout_danger_red">#FF4D4F</color>
+    <color name="logout_btn_gradient_start">#FF5A5F</color>
+    <color name="logout_btn_gradient_end">#FF3B30</color>
+    <color name="delete_btn_gradient_end">#FF2D2D</color>
+    <color name="warning_icon_red">#FF3B30</color>
+    <color name="warning_text_red">#D32F2F</color>
+    <color name="brand_purple">#7B61FF</color>
+    <color name="brand_purple_focus">#7B61FF</color>
+    <color name="brand_blue">#5B6CFF</color>
+    <color name="update_btn_gradient_start">#7B61FF</color>
+    <color name="update_btn_gradient_end">#5B6CFF</color>
+    <color name="security_tips_bg">#EAF7EE</color>
+    <color name="dialog_cancel_bg">#F1F2F6</color>
+    
+    <!-- Analysis Premium Design Colors -->
+    <color name="analysis_attended_bg">#E8F5E9</color>
+    <color name="analysis_conducted_bg">#F3E5F5</color>
+    <color name="analysis_insight_bg">#635BFF</color>
+    <color name="analysis_subject_label">#545470</color>
+    <color name="analysis_donut_track">#E5E7EB</color>
+    <color name="analysis_donut_progress">#22C55E</color>
+    <color name="analysis_calc_accent">#059669</color>
+    <color name="analysis_calc_text_sub">#064E3B</color>
+    <color name="analysis_calc_tip_bg">#DEF7E5</color>
+    
+    <color name="analysis_warning_accent">#EA580C</color>
+    <color name="analysis_warning_bg">#FFF7ED</color>
+    <color name="analysis_warning_text_sub">#7C2D12</color>
+    <color name="analysis_warning_tip_bg">#FFEDD5</color>
+
+    <!-- Quick Action Gradient Colors -->
+    <color name="quick_pink_start">#FF82A9</color>
+    <color name="quick_pink_end">#FF5678</color>
+    <color name="quick_purple_start">#9D88FF</color>
+    <color name="quick_purple_end">#7B61FF</color>
+    <color name="quick_purple_add_subject">#CB33CB</color>
+    <color name="analysis_insight_light_bg">#F5F3FF</color>
+</resources>
