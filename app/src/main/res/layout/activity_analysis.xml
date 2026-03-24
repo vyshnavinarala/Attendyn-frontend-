@@ -137,8 +137,8 @@
                     <!-- Donut Progress Container -->
                     <FrameLayout
                         android:id="@+id/donut_container"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -183,13 +183,13 @@
                                 android:id="@+id/tv_status_badge_container"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
+                                android:layout_marginTop="5dp"
                                 app:cardBackgroundColor="@color/attendance_red"
-                                app:cardCornerRadius="4dp"
+                                app:cardCornerRadius="20dp"
                                 app:cardElevation="0dp"
                                 app:contentPaddingBottom="2dp"
-                                app:contentPaddingLeft="8dp"
-                                app:contentPaddingRight="8dp"
+                                app:contentPaddingLeft="6dp"
+                                app:contentPaddingRight="6dp"
                                 app:contentPaddingTop="2dp">
 
                                 <TextView
@@ -199,7 +199,7 @@
                                     android:fontFamily="sans-serif-black"
                                     android:text="HIGH RISK"
                                     android:textColor="@color/white"
-                                    android:textSize="10sp" />
+                                    android:textSize="9.5sp" />
                             </com.google.android.material.card.MaterialCardView>
                         </LinearLayout>
                     </FrameLayout>

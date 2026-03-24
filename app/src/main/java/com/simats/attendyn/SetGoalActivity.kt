@@ -28,12 +28,8 @@ class SetGoalActivity : AppCompatActivity() {
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                val clampedProgress = if (progress < 50) 50 else progress
-                if (fromUser && progress < 50) {
-                    seekBar?.progress = 50
-                }
-                percentageText.text = "$clampedProgress%"
-                progressBar.setProgress(clampedProgress, true)
+                percentageText.text = "$progress%"
+                progressBar.setProgress(progress, true)
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}

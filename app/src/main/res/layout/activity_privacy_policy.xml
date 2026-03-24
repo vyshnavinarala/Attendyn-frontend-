@@ -82,6 +82,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="32dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Information We Collect"
@@ -93,8 +94,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:gravity="center"
                         android:lineSpacingExtra="6dp"
-                        android:text="Attendyn collects and stores attendance data, subject information, and user preferences locally on your device. We value your privacy and do not share your personal information with third parties."
+                        android:text="Attendyn collects and stores attendance data, subject information, and user preferences securely on our servers. We value your privacy and do not share your personal information with third parties."
                         android:textColor="#6B7280"
                         android:textSize="15sp" />
 
@@ -108,6 +110,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="24dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Data Usage"
@@ -119,8 +122,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:gravity="center"
                         android:lineSpacingExtra="6dp"
-                        android:text="Your attendance data is used solely to provide you with attendance tracking, analytics, and predictions. All calculations are performed locally on your device."
+                        android:text="Your attendance data is used solely to provide you with attendance tracking, analytics, and predictions to help you stay on track with your academic goals."
                         android:textColor="#6B7280"
                         android:textSize="15sp" />
 
@@ -134,6 +138,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="24dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Data Storage"
@@ -145,8 +150,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:gravity="center"
                         android:lineSpacingExtra="6dp"
-                        android:text="All your data is stored locally on your device. We do not maintain servers that store your personal attendance information."
+                        android:text="Your data is stored securely in our cloud database to ensure synchronization across your devices. We maintain modern server infrastructure to protect your personal attendance information."
                         android:textColor="#6B7280"
                         android:textSize="15sp" />
 
@@ -160,6 +166,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="24dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Data Security"
@@ -171,8 +178,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:gravity="center"
                         android:lineSpacingExtra="6dp"
-                        android:text="We implement security measures to protect your data from unauthorized access. However, no method of electronic storage is 100% secure."
+                        android:text="We implement industry-standard security measures to protect your data from unauthorized access. Your privacy and data integrity are our top priority."
                         android:textColor="#6B7280"
                         android:textSize="15sp" />
 
@@ -186,6 +194,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="24dp"
                         android:fontFamily="sans-serif-medium"
                         android:text="Changes to Privacy Policy"
@@ -197,16 +206,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:gravity="center"
                         android:lineSpacingExtra="6dp"
                         android:text="We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy in the app."
                         android:textColor="#6B7280"
                         android:textSize="15sp" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="24dp"
-                        android:background="#F3F4F6" />
 
                     <!-- Footer: Last Updated -->
                     <View
@@ -218,8 +222,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:layout_marginTop="16dp"
-                        android:text="Last updated: February 14, 2026"
+                        android:text="Last updated: March 24, 2026"
                         android:textColor="#9CA3AF"
                         android:textSize="13sp" />
 

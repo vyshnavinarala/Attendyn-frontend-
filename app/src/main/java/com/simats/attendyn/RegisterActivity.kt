@@ -96,12 +96,27 @@ class RegisterActivity : AppCompatActivity() {
                             
                             // Save user info and token to SharedPreferences
                             val prefs = getSharedPreferences("AttendynPrefs", MODE_PRIVATE)
+                            val userId = registerResponse?.user?.id ?: -1
+                            val serverPhotoPath = registerResponse?.user?.photoPath
+
+                            // Delete stale local file for this ID to prevent picking up other users' photos
+                            if (userId != -1) {
+                                val fileName = "profile_image_$userId.jpg"
+                                val file = java.io.File(filesDir, fileName)
+                                if (file.exists()) {
+                                    file.delete()
+                                }
+                            }
+
                             prefs.edit().apply {
                                 clear()
                                 putString("USER_NAME", name)
                                 putString("USER_EMAIL", email)
                                 putString("AUTH_TOKEN", registerResponse?.token)
-                                putInt("USER_ID", registerResponse?.user?.id ?: -1)
+                                putInt("USER_ID", userId)
+                                if (serverPhotoPath != null) {
+                                    putString("USER_PHOTO_PATH", serverPhotoPath)
+                                }
                                 apply()
                             }
                             

@@ -79,7 +79,10 @@ class EditProfileActivity : AppCompatActivity() {
     }
 
     private fun checkFallbackAndSetDefault(prefs: android.content.SharedPreferences) {
-        val fallbackFile = java.io.File(filesDir, "profile_image.jpg")
+        val userId = prefs.getInt("USER_ID", -1)
+        val fileName = if (userId != -1) "profile_image_$userId.jpg" else "profile_image.jpg"
+        val fallbackFile = java.io.File(filesDir, fileName)
+        
         if (fallbackFile.exists()) {
             binding.ivProfileEdit.setPadding(0, 0, 0, 0)
             binding.ivProfileEdit.scaleType = android.widget.ImageView.ScaleType.CENTER_CROP
