@@ -60,6 +60,9 @@ class RegisterActivity : AppCompatActivity() {
 
             if (name.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+            } else if (!name.matches(Regex("^[a-zA-Z\\s]+$"))) {
+                binding.nameEditText.error = "Name should only contain letters and spaces"
+                binding.nameEditText.requestFocus()
             } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 binding.emailEditText.error = "Invalid email format"
                 binding.emailEditText.requestFocus()

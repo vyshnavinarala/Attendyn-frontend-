@@ -102,8 +102,8 @@ class LoginActivity : AppCompatActivity() {
                             apply()
                         }
                         
-                        // Navigate to MainActivity
-                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                        // Navigate to SubscriptionActivity
+                        val intent = Intent(this@LoginActivity, SubscriptionActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {

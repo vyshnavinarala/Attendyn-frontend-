@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Subscription Colors -->
+    <color name="premium_bg">#F3F0FF</color>
+    <color name="premium_pill_bg">#E6E1FF</color>
+    <color name="premium_pill_text">#7B61FF</color>
+    <color name="premium_card_bg">#FFFFFF</color>
+    <color name="premium_accent">#7B61FF</color>
+    <color name="premium_gradient_start">#7B61FF</color>
+    <color name="premium_gradient_end">#5B6CFF</color>
+</resources>
